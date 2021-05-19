@@ -11,6 +11,7 @@ public class ConsumerExample2 {
 		Consumer<Instructor> c1 = (instructor) -> System.out.println(instructor);
 		instrctors.forEach(c1);
 		System.out.println("---------------------------------------");
+		
 		Consumer<Instructor> c2 = (instructor) -> System.out.println(instructor.getName());
 		instrctors.forEach(c2);
 

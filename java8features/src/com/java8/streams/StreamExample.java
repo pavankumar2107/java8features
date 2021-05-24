@@ -25,6 +25,7 @@ public class StreamExample {
 		System.out.println(map);
 
 		Map<String, List<String>> m = list.stream().filter(i -> i.isOnlineCourses() && i.getYearsOfExperience() > 10)
+				.peek(s -> System.out.println(s))
 				.collect(Collectors.toMap(Instructor::getName, Instructor::getCourses));
 		System.out.println(m);
 
